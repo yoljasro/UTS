@@ -1,0 +1,28 @@
+@mixin container
+    width: 100%
+    padding: 55px 50px 5px 70px 
+    margin: auto
+
+@mixin row
+    display: flex
+    flex-wrap: wrap
+
+@mixin title
+    font-family: Ephesis
+    font-size: 100px
+    font-weight: 400
+    margin-bottom: 190px
+
+@mixin font($size, $color, $weight)
+    font-size: $size
+    color: $color
+
+    @if $weight == regular
+        font-weight: 400 !important
+        font-family: PoppinsRegular !important
+    @else if $weight == medium
+        font-weight: 500 !important
+        font-family: PoppinsMedium !important
+    @else if $weight == light
+        font-weight: 300 !important
+        font-family: PoppinsLight !important

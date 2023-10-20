@@ -1,8 +1,46 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+//next
+import { useRouter } from "next/router";
+import type { AppProps } from "next/app";
+//react
+import { useEffect, useRef } from "react";
+//next-intl
+import { NextIntlProvider } from "next-intl";
+//component
+//material ui
+import { ThemeProvider } from "@mui/material";
+//lib
+//sass
+import "../styles/globals.sass";
+// next progresbar
+import NextNProgress from "nextjs-progressbar";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+type PagePropsType = {
+  messages: typeof import("../messages/uz.json");
+};
+
+const usePreviousRoute = () => {
+  const { asPath } = useRouter();
+
+  const ref = useRef<string | null>(null);
+
+  useEffect(() => {
+    ref.current = asPath;
+  }, [asPath]);
+
+  return ref.current;
+};
+
+function MyApp({ Component, pageProps }: AppProps<PagePropsType>) {
+  const previousRoute = usePreviousRoute();
+
+  return (
+    <>
+      <NextIntlProvider messages={pageProps.messages}>
+        <NextNProgress />
+        <Component {...pageProps} {...{ previousRoute: previousRoute }} />
+      </NextIntlProvider>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
