@@ -4,6 +4,12 @@
 .branding
     @include container
     display: flex
+    // justify-content: 
+    gap: 400px
+
+    &__info
+        &:last-child
+            // margin-top: 130px
 
     &__title
         @include font(24px , #FFF ,medium)
@@ -12,11 +18,20 @@
         padding-top: 190px
 
     &__hr
-       position: relative
-       top: 24px
+        position: relative
+        top: 24px
 
     &__desc
         @include font(18px , #FFF , light)
         width: 100%
         max-width: 620px
         padding-top: 50px
+
+    &__btn
+        @include font(18px , #FFF  , medium)
+        padding-top: 56px
+
+    &__line
+        width: 100%
+        max-width: 144px
+        margin-top: 20px

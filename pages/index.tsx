@@ -6,6 +6,8 @@ import { useTranslations } from "next-intl";
 import { Header } from '../components/Header';
 import { ClientBased } from '../components/ClientBased';
 import { Branding } from '../components/Branding';
+import { Portfolio } from '../components/Portfolio';
+import { Contact } from '../components/Contact';
 
 
 const Home: NextPage = () => {
@@ -15,6 +17,8 @@ const Home: NextPage = () => {
       <Header/>
       <ClientBased/>
       <Branding/>
+      <Portfolio/>
+      <Contact/>
      </div>
   )
 }
