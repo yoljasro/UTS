@@ -13,7 +13,7 @@ import { TextField } from '@mui/material'
 
 export const Contact: FC<any> = () => {
     return (
-        <div className={styles.contact}>
+        <div className={styles.contact} id='contact'>
             <div className={styles.contact__section}>
                 <MainPageTitle title='Contact Us' />
                 <p className={styles.contact__text}>For Collaboration</p>

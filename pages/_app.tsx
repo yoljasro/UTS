@@ -44,3 +44,10 @@ function MyApp({ Component, pageProps }: AppProps<PagePropsType>) {
 }
 
 export default MyApp;
+
+export async function getStaticPaths() {
+  return {
+    paths: [], // Bu yerda bosh array bo'lishi kerak
+    fallback: 'blocking',
+  };
+}

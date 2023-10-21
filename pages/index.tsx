@@ -32,3 +32,10 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
     },
   };
 };
+
+// export async function getStaticPaths() {
+//   return {
+//     paths: [], // Bu yerda bosh array bo'lishi kerak
+//     fallback: 'blocking',
+//   };
+// }

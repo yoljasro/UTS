@@ -9,10 +9,13 @@ import { FC } from 'react'
 import { Btn } from '../Btn'
 // next component
 import Image from 'next/image'
+import Bounce from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade'
 
 export const Header: FC<any> = () => {
   return (
     <div className={styles.header}>
+      <Bounce left cascade>
       <div className={styles.header__info}>
         <h3 className={styles.header__title}>UTS</h3>
         <p className={styles.header__desc}>We collaborate with companies to create world-class digital experience
@@ -20,6 +23,8 @@ export const Header: FC<any> = () => {
           practices in web development, design, and digital marketing.</p>
         <Btn />
       </div>
+      </Bounce>
+      <Fade right cascade>
       <div className={styles.header__media}>
         <ul className={styles.header__services}>
           <li>Web design</li>
@@ -29,6 +34,7 @@ export const Header: FC<any> = () => {
         </ul>
         <Image className={styles.header__image} src={'/assets/img/our.png'} alt='our image' width={765} height={452} />
       </div>
+      </Fade>
     </div>
   )
 }

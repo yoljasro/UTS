@@ -59,7 +59,7 @@ export const Navbar: FC = () => {
         <li className={styles.navbar__menuItem} onClick={closeMenu}>
           <Link
             activeClass="active"
-            to="bio"
+            to="about"
             spy={true}
             smooth={true}
             offset={-70}
@@ -72,7 +72,7 @@ export const Navbar: FC = () => {
         <li className={styles.navbar__menuItem} onClick={closeMenu}>
           <Link
             activeClass="active"
-            to="bio"
+            to="branding"
             spy={true}
             smooth={true}
             offset={-70}
@@ -85,7 +85,7 @@ export const Navbar: FC = () => {
         <li className={styles.navbar__menuItem} onClick={closeMenu}>
           <Link
             activeClass="active"
-            to="bio"
+            to="portfolio"
             spy={true}
             smooth={true}
             offset={-70}
@@ -98,7 +98,7 @@ export const Navbar: FC = () => {
         <li className={styles.navbar__menuItem} onClick={closeMenu}>
           <Link
             activeClass="active"
-            to="bio"
+            to="contact"
             spy={true}
             smooth={true}
             offset={-70}
