@@ -1,0 +1,29 @@
+@import "../../styles/variables"
+@import "../../styles/mixins"
+
+.header
+    @include container
+    display: flex
+    justify-content: space-between
+    @media (max-width:768px)
+        flex-direction: column
+
+
+    &__title
+        @include font(40px , $colorWhite , medium)
+
+    &__desc
+        @include font(24px , $colorWhite , light)
+        width: 100%
+        max-width: 860px
+        padding-top: 15px
+
+    &__media
+        display: flex
+        flex-direction: column
+
+    &__services
+        display: flex
+        gap: 55px
+        @include font(18px , #FFF , light)
+        margin-bottom: 20px

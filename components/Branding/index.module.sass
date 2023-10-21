@@ -1,0 +1,22 @@
+@import "../../styles/variables"
+@import "../../styles/mixins"
+
+.branding
+    @include container
+    display: flex
+
+    &__title
+        @include font(24px , #FFF ,medium)
+        width: 100%
+        max-width: 296px
+        padding-top: 190px
+
+    &__hr
+       position: relative
+       top: 24px
+
+    &__desc
+        @include font(18px , #FFF , light)
+        width: 100%
+        max-width: 620px
+        padding-top: 50px

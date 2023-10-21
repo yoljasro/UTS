@@ -1,0 +1,22 @@
+@import "../../styles/variables"
+@import "../../styles/mixins"
+
+.client
+    @include container
+    display: flex
+    justify-content: space-between
+    @media (max-width:768px)
+        flex-direction: column
+
+    &__desc
+        @include font(24px , #FFF , light)
+        width: 100%
+        padding-top: 190px
+        max-width: 1002px
+
+        & span
+            @include font(30px , #FFF , medium)
+
+    &__img
+        position: relative
+        top: 100px
