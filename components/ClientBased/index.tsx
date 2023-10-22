@@ -9,14 +9,18 @@ import { Btn } from '../Btn'
 import Image from 'next/image'
 import Bounce from 'react-reveal/Bounce'
 import Fade from 'react-reveal/Fade'
+import { useRouter } from "next/router";
+import { useTranslations } from "next-intl";
 
 export const ClientBased: FC<any> = () => {
+  const t = useTranslations();
+
   return (
     <div className={styles.client} id='about'>
       <Bounce left cascade>
         <div className={styles.client__info}>
-      <MainPageTitle title='Who are  we ?'/>
-      <p className={styles.client__desc}> <span> UTS</span> is an emerging Digital Marketing Agency based in Tashkent, Uzbekistan. We work closely with many brands and companies since 2023. Our clients are sacred and our passion is to provide them with utmost support. Discover how we can collaborate to transform the way your business performs.</p>
+      <MainPageTitle title={t("about.title")}/>
+      <p className={styles.client__desc}> <span> UTS</span> {t("about.info")}</p>
       <Btn/>
       </div>
       </Bounce>

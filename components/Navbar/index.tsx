@@ -2,6 +2,7 @@ import React, { useState, useEffect, FC } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import Zoom from 'react-reveal/Zoom';
 import {
   FormControl,
   IconButton,
@@ -45,83 +46,85 @@ export const Navbar: FC = () => {
   }, [selectedLang]);
 
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.navbar__logoCont}>
-        <Image
-          className={styles.navbar__logo}
-          src={"/assets/img/logo2.svg"}
-          alt="logo"
-          width={124}
-          height={69}
-        />
-      </div>
-      <ul className={styles.navbar__menu}>
-        <li className={styles.navbar__menuItem} onClick={closeMenu}>
-          <Link
-            activeClass="active"
-            to="about"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-           About
-          </Link>
-        </li>
+    <nav className={styles.navbar} id="navbar">
+      <Zoom cascade>
+        <div className={styles.navbar__logoCont}>
+          <Image
+            className={styles.navbar__logo}
+            src={"/assets/img/logo2.svg"}
+            alt="logo"
+            width={124}
+            height={69}
+          />
+        </div>
+        <ul className={styles.navbar__menu}>
+          <li className={styles.navbar__menuItem} onClick={closeMenu}>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              {t("navbar.about")}
+            </Link>
+          </li>
 
-        <li className={styles.navbar__menuItem} onClick={closeMenu}>
-          <Link
-            activeClass="active"
-            to="branding"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Services
-          </Link>
-        </li>
+          <li className={styles.navbar__menuItem} onClick={closeMenu}>
+            <Link
+              activeClass="active"
+              to="branding"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              {t("navbar.services")}
+            </Link>
+          </li>
 
-        <li className={styles.navbar__menuItem} onClick={closeMenu}>
-          <Link
-            activeClass="active"
-            to="portfolio"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Portfolio
-          </Link>
-        </li>
-        
-        <li className={styles.navbar__menuItem} onClick={closeMenu}>
-          <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
+          <li className={styles.navbar__menuItem} onClick={closeMenu}>
+            <Link
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              {t("navbar.portfolio")}
+            </Link>
+          </li>
 
-      <FormControl className={styles.navbar__language}>
-        <Select
-          value={selectedLang}
-          onChange={handleChangeLang}
-          className={styles.navbar__select}
-        >
-          {langs.map((lang) => (
-            <MenuItem key={lang} value={lang}>
-              {lang}
-            </MenuItem>
-          ))}
-        </Select>
-      </FormControl>
+          <li className={styles.navbar__menuItem} onClick={closeMenu}>
+            <Link
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              {t("navbar.contact")}
+            </Link>
+          </li>
+        </ul>
+
+        <FormControl className={styles.navbar__language}>
+          <Select
+            value={selectedLang}
+            onChange={handleChangeLang}
+            className={styles.navbar__select}
+          >
+            {langs.map((lang) => (
+              <MenuItem key={lang} value={lang}>
+                {lang}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </Zoom>
     </nav>
   );
 };

@@ -1,3 +1,56 @@
 {
-    "hi" : "salom"
-}
+    "navbar": {
+      "about": "Biz haqimizda",
+      "services": "Xizmatlarimiz",
+      "portfolio": "Portfolio",
+      "contact": "Bog'lanish"
+    },
+  
+    "pagesTitle": {
+      "header": "UTS",
+      "about": "Biz kimmiz?",
+      "services": "Nima qila olamiz?",
+      "portfolio": "Bizning ishlar",
+      "contact": "Bog'lanish"
+    },
+  
+    "header": {
+      "title": "UTS",
+      "information": "Biz kompaniyalar bilan jahon darajasidagi raqamli tajribani yaratish va veb-ishlab chiqish, dizayn va raqamli marketing bo'yicha eng ilg'or amaliyotlarni o'zlashtirish orqali yaxshi biznes yuritishingizga yordam berish uchun hamkorlik qilamiz.",
+      "button": "Hamkorlikni boshlash"
+    },
+  
+    "about": {
+      "title": "Biz kimmiz?",
+      "info": "O‘zbekistonning Toshkent shahrida joylashgan rivojlanayotgan raqamli marketing agentligi. Biz 2023 yildan beri ko'plab brendlar va kompaniyalar bilan yaqindan hamkorlik qilamiz. Bizning mijozlarimiz muqaddasdir va bizning ishtiyoqimiz ularga maksimal darajada yordam berishdir. Biznesingizning ishlash usulini o'zgartirish uchun qanday hamkorlik qilishimiz mumkinligini bilib oling.",
+      "button": "Hamkorlikni boshlash"
+    },
+    "services": {
+      "title": "Nima qila olamiz?",
+        "website": "Veb-sayt ishlab chiqish + brending",
+        "info": "Mahsulotlaringizni Internetda sotganingizda, sizga qisqa muddatli tezkor savdoga qaratilgan uzoq muddatli strategiya kerak bo'ladi. Jozibali veb-dizayn, iste'molchiga yo'naltirilgan kontent va to'g'ri savdo huni - barchasi muvaffaqiyatli elektron tijorat brendlarida muhim rol o'ynaydi."
+      },
+  
+    "portfolio": {
+      "title": "Bizning ishlar"
+    },
+  
+    "contact": {
+      "title": "Bog'lanish",
+      "forColaboration": "Hamkorlik uchun",
+      "inputPlaceholder": "Elektron pochtangizni yozing",
+      "button": "Yuborish" ,
+      "agree" : "Maxfiylik siyosati shartlariga roziman" ,
+      "succes" : "Muvaffaqiyatli yuborildi"
+    },
+  
+    "footer": {
+      "reserve": "@2023 Barcha huquqlar himoyalangan.",
+      "infoReserve": "Biz ko'rish tajribangizni yaxshilash va saytdan foydalanishni tahlil qilish uchun cookie-fayllardan foydalanamiz.",
+      "subscribe": "Obuna bo'ling",
+      "phone": "Telefon raqami",
+      "locationTitle": "Manzilimiz",
+      "location": "Ahmad Donish 4, Tashkent, Uzbekistan.",
+      "backToTop": "Yuqoriga qaytish"
+    }
+  }

@@ -8,19 +8,21 @@ import { Button } from 'react-scroll'
 import { FC } from 'react'
 import { Btn } from '../Btn'
 // next component
-import Image from 'next/image'
 import Bounce from 'react-reveal/Bounce';
 import Fade from 'react-reveal/Fade'
+import { useRouter } from "next/router";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export const Header: FC<any> = () => {
+  const t = useTranslations()
+
   return (
     <div className={styles.header}>
       <Bounce left cascade>
       <div className={styles.header__info}>
-        <h3 className={styles.header__title}>UTS</h3>
-        <p className={styles.header__desc}>We collaborate with companies to create world-class digital experience
-          and help you do better business through adoption most advanced
-          practices in web development, design, and digital marketing.</p>
+        <h3 className={styles.header__title}>{t("header.title")}</h3>
+        <p className={styles.header__desc}>{t("header.information")}</p>
         <Btn />
       </div>
       </Bounce>

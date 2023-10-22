@@ -12,9 +12,26 @@
             flex-direction: column
 
     &__card
-        width: 100%     
+        width: 100%    
+        padding: 20px 
         max-width: 429px
         border: 1px solid #FFF
         background: rgba(255, 255, 255, 0.00)
         height: 304px
         color: white
+        text-align: center
+        display: flex
+        flex-direction: column
+        gap: 30px
+        justify-content: center
+        align-content: center
+        align-items: center
+        border-radius: 10px
+        cursor: pointer
+        & img
+            &:hover
+                transform: scale(1.1)
+                transition: 0.4s ease
+
+    &__site
+        @include font(20px , blue , regular)

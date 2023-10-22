@@ -8,6 +8,7 @@ import { ClientBased } from '../components/ClientBased';
 import { Branding } from '../components/Branding';
 import { Portfolio } from '../components/Portfolio';
 import { Contact } from '../components/Contact';
+import { Footer } from '../components/Footer';
 
 
 const Home: NextPage = () => {
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <Branding/>
       <Portfolio/>
       <Contact/>
+      <Footer/>
      </div>
   )
 }
