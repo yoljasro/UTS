@@ -10,6 +10,7 @@ import {
   Select,
   SelectChangeEvent,
 } from "@mui/material";
+
 import { FiMenu } from "react-icons/fi";
 import { langs, localStorageKeys } from "../../constants";
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -46,7 +47,7 @@ export const Navbar: FC = () => {
   }, [selectedLang]);
 
   return (
-    <nav className={styles.navbar} id="navbar">
+    <nav className={styles.navbar} id="navbadr">
       <Zoom cascade>
         <div className={styles.navbar__logoCont}>
           <Image
