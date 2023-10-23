@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   i18n: {
     locales: ['uz', 'ru', 'en', ],
-    defaultLocale: 'ru'
+    defaultLocale: 'uz'
   },
 }
 

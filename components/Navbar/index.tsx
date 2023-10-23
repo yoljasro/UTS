@@ -3,13 +3,6 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Zoom from 'react-reveal/Zoom';
-import {
-  FormControl,
-  IconButton,
-  MenuItem,
-  Select,
-  SelectChangeEvent,
-} from "@mui/material";
 
 import { FiMenu } from "react-icons/fi";
 import { langs, localStorageKeys } from "../../constants";
