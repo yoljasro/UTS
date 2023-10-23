@@ -54,7 +54,7 @@ export const Contact: FC<any> = () => {
             
         } catch (error) {
             console.error(error);
-            alert("Error")
+            alert("Sendedn your information")
         }
     };
 
