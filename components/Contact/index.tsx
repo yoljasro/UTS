@@ -8,24 +8,19 @@ import { FC } from 'react'
 import { Btn } from '../Btn'
 // next component
 import Image from 'next/image'
-import { TextField } from '@mui/material'
-import Button from '@mui/material'
 import axios from 'axios'
 import Modal from 'react-modal';
-import Snackbar from '@mui/material/Snackbar';
-import MuiAlert, { AlertProps } from '@mui/material/Alert';
-import Stack from '@mui/material/Stack';
 import { useRouter } from "next/router";
 import { useTranslations } from "next-intl";
 import Fade from 'react-reveal/Fade'
 
 
-const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
-    props,
-    ref,
-) {
-    return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-});
+// const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
+//     props,
+//     ref,
+// ) {
+//     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+// });
 
 export const Contact: FC<any> = () => {
     const t = useTranslations();
@@ -96,13 +91,13 @@ export const Contact: FC<any> = () => {
 
 
                         </form>
-                        <Stack spacing={2} sx={{ width: '100%' }}>
+                        {/* <Stack spacing={2} sx={{ width: '100%' }}>
                             <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
                                 <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
                                     {t("contact.succes")}
                                 </Alert>
                             </Snackbar>
-                        </Stack>
+                        </Stack> */}
                     </div>
 
                 </Fade>
