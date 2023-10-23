@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FC } from "react";
+import React, { useState, useEffect, FC, ChangeEventHandler } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -27,13 +27,12 @@ export const Navbar: FC = () => {
   const handleClick = () => setClick(!click);
   const closeMenu = () => setClick(false);
 
-  const handleChangeLang = (event: SelectChangeEvent) => {
+  const handleChangeLang: ChangeEventHandler<HTMLSelectElement> = (event) => {
     const eventLang = event.target.value;
     setSelectedLang(eventLang);
     localStorage.setItem(localStorageKeys.selectedLang, eventLang);
     router.push(path, undefined, { locale: eventLang });
   };
-
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
