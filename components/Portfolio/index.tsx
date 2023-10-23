@@ -66,7 +66,7 @@ export const Portfolio = () => {
             style={{ marginRight: '1rem' }}
             onClick={() => window.open('https://uzbegims.lv', '_blank')}
           >
-            <Image src={'/assets/img/uzbegims.png'} alt='halal' width={250} height={200} />
+            <img src={'https://scontent.ftas2-1.fna.fbcdn.net/v/t31.18172-8/10623468_565350160231408_248298186353896492_o.jpg?stp=cp0_dst-jpg_e15_q65_s320x320&_nc_cat=104&ccb=1-7&_nc_sid=947906&_nc_ohc=j9VMXRn5CvMAX9TeisQ&_nc_ht=scontent.ftas2-1.fna&oh=00_AfAW1hy_iLtkIOuMIplb4fk7B3mgL1Kn0FF-Y715TtRugQ&oe=655E04D8'} alt='uzbe' width={250} height={200} />
             <p>
               <Link className={styles.portfolio__site} href={'https://uzbegims.lv'}>uzbegims.lv</Link>
             </p>
