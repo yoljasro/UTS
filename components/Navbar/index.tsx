@@ -47,7 +47,7 @@ export const Navbar: FC = () => {
   }, [selectedLang]);
 
   return (
-    <nav className={styles.navbar} id="navbadr">
+    <nav className={styles.navbar} id="navbar">
       <Zoom cascade>
         <div className={styles.navbar__logoCont}>
           <Image
@@ -112,19 +112,17 @@ export const Navbar: FC = () => {
           </li>
         </ul>
 
-        <FormControl className={styles.navbar__language}>
-          <Select
-            value={selectedLang}
-            onChange={handleChangeLang}
-            className={styles.navbar__select}
-          >
-            {langs.map((lang) => (
-              <MenuItem key={lang} value={lang}>
-                {lang}
-              </MenuItem>
-            ))}
-          </Select>
-        </FormControl>
+        <select
+          value={selectedLang}
+          onChange={handleChangeLang}
+          className={styles.navbar__language}
+        >
+          {langs.map((lang) => (
+            <option key={lang} value={lang}>
+              {lang}
+            </option>
+          ))}
+        </select>
       </Zoom>
     </nav>
   );
