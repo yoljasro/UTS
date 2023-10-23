@@ -13,7 +13,7 @@
         @include font(24px , $colorWhite , light)
         cursor: pointer
         margin-top: 20px
-       
+
     &__menuItem
         &:hover
             text-decoration: underline
@@ -27,8 +27,11 @@
         padding: 10px
         border: none !important
         outline: none !important
+        background: transparent
+        color: white
+        @include font(24px , $colorWhite , medium)
+        background: black
 
     &__select
         color: white
-        @include font(24px , $colorWhite , medium)
         text-decoration: underline

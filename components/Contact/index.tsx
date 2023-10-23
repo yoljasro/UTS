@@ -46,11 +46,15 @@ export const Contact: FC<any> = () => {
                 text: text,
                 email: email
             });
-            setOpen(true)
+            // setOpen(true)
+            alert("Sended your information")
             // setResponseMessage(response.data); // Assuming the API returns a success message
             // setModalIsOpen(true); // Open the mod
+
+            
         } catch (error) {
             console.error(error);
+            alert("Error")
         }
     };
 

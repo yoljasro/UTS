@@ -22,8 +22,9 @@ export const Btn: FC<any> = () => {
           offset={-70} 
           duration={500}>
           <button  className={styles.btn}>
-            <div className={styles.btn__btnAnime}></div>
-            <p className={styles.btn__text}>{t("header.button")}</p>
+          
+            <div className={styles.btn__btnAnime}>{t("header.button")}</div>
+            {/* <p className={styles.btn__text}></p> */}
           </button>
         </Link>
       </Fade>

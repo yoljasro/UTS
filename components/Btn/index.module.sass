@@ -13,12 +13,18 @@
     align-items: flex-start
     padding: 0
     overflow: hidden
+    @include font(24px , #FFF , light)
+    // position: absolute
+    left: 24px
+    text-align: center
+    // padding: 4px
+    top: 5px
     &:hover
         max-width: 285px
         transition: 0.5s ease
     &:hover &__btnAnime
         max-width: 285px
-        transition: 0.5s ease 
+        transition: 0.5s ease
 
     &__btnAnime
         width: 100%
@@ -27,6 +33,9 @@
         height: 49px
         justify-content: flex-start
         align-items: flex-start
+        padding-left: 15px
+        padding-top: 5px
+        cursor: pointer
 
     &__text
         @include font(24px , #FFF , light)
