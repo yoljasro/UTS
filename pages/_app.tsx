@@ -7,8 +7,6 @@ import { useEffect, useRef } from "react";
 import { NextIntlProvider } from "next-intl";
 //component
 //material ui
-import { ThemeProvider } from "@mui/material";
-//lib
 //sass
 import "../styles/globals.sass";
 // next progresbar
