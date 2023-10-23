@@ -1,7 +1,6 @@
 import { FC } from "react";
 //sass
 import styles from "./index.module.sass";
-import { Button } from "@mui/material";
 // import Fade from 'react-reveal/Fade';
 import { Link, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
