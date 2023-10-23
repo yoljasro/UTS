@@ -14,14 +14,26 @@ import { Footer } from '../components/Footer';
 const Home: NextPage = () => {
   return (
     <div>
-      <Navbar/>
-      <Header/>
-      <ClientBased/>
-      <Branding/>
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
-     </div>
+      <Head>
+        <title>UTS </title>
+        <meta
+          name="UTS"
+          content="Uzbekistan Tech Service"
+        />
+        <meta
+          name="google-site-verification"
+          content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4"
+        />
+        <link rel="icon" href="/assets/img/logo2.svg" />
+      </Head>
+      <Navbar />
+      <Header />
+      <ClientBased />
+      <Branding />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </div>
   )
 }
 

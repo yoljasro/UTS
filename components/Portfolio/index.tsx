@@ -32,38 +32,45 @@ export const Portfolio = () => {
           transition={{ duration: 1 }}
           style={{ y: scrollYProgress, display: 'flex', justifyContent: 'center' }}
         >
-            <motion.div
-              className={styles.portfolio__card}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              style={{ marginRight: '1rem' }}
-            >
-              <Image src={'/assets/img/halal.svg'} alt='halal' width={400} height={200} />
-              <p>
-                <Link className={styles.portfolio__site} href={'https://worldhalal.uz'}>worldhalal.uz</Link>
-              </p>
-            </motion.div>
           <motion.div
             className={styles.portfolio__card}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{ marginRight: '1rem' }}
+            onClick={() => window.open('https://worldhalal.uz', '_blank')}
           >
-            <img src={'https://www.chefs.uz/assets/img/noroot.png'} alt='halal' width={200} height={200} />
+            <Image src={'/assets/img/halal.svg'} alt='halal' width={400} height={200} />
             <p>
-              <Link className={styles.portfolio__site} href={'https://chefs.uz'}>chefs.uz</Link>
+              <Link className={styles.portfolio__site} href={'https://worldhalal.uz'}>worldhalal.uz</Link>
             </p>
+            <p>{t("portfolio.halal")}</p>
           </motion.div>
           <motion.div
             className={styles.portfolio__card}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{ marginRight: '1rem' }}
+            onClick={() => window.open('https://chefs.uz', '_blank')}
+          >
+            <img src={'https://www.chefs.uz/assets/img/noroot.png'} alt='halal' width={200} height={200} />
+            <p>
+              <Link className={styles.portfolio__site} href={'https://chefs.uz'}>chefs.uz</Link>
+
+            </p>
+            <p>{t("portfolio.chefs")}</p>
+          </motion.div>
+          <motion.div
+            className={styles.portfolio__card}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            style={{ marginRight: '1rem' }}
+            onClick={() => window.open('https://uzbegims.lv', '_blank')}
           >
             <Image src={'/assets/img/uzbegims.png'} alt='halal' width={250} height={200} />
             <p>
               <Link className={styles.portfolio__site} href={'https://uzbegims.lv'}>uzbegims.lv</Link>
             </p>
+            <p>{t("portfolio.uzbegim")}</p>
           </motion.div>
 
         </motion.div>

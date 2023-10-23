@@ -3,8 +3,10 @@
 
 .portfolio
     @include container
+    @media (max-width:768px)
+        flex-direction: column
 
-    &__cards 
+    &__cards
         margin-top: 140px
         display: flex
         gap: 30px
@@ -12,12 +14,12 @@
             flex-direction: column
 
     &__card
-        width: 100%    
-        padding: 20px 
-        max-width: 429px
+        width: 100%
+        padding: 20px
+        max-width: 480px
         border: 1px solid #FFF
         background: rgba(255, 255, 255, 0.00)
-        height: 304px
+        height: 434px
         color: white
         text-align: center
         display: flex
@@ -28,10 +30,11 @@
         align-items: center
         border-radius: 10px
         cursor: pointer
+        @include font(18px , #FFF , light)
         & img
             &:hover
                 transform: scale(1.1)
                 transition: 0.4s ease
 
     &__site
-        @include font(20px , blue , regular)
+        @include font(20px , #FFF , regular)

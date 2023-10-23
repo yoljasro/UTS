@@ -1,56 +1,53 @@
 {
-    "navbar": {
-      "about": "About",
-      "services": "Services",
-      "portfolio": "Portfolio",
-      "contact": "Contact"
-    },
-  
-    "pagesTitle": {
-      "header": "UTS",
-      "services": "What we do ?",
-      "portfolio": "Our Porfolio",
-      "contact": "Contact Us"
-    },
-  
-    "header": {
-      "title": "UTS",
-      "information": "We collaborate with companies to create world-class digital experience and help you do better business through adoption most advanced practices in web development, design, and digital marketing",
-      "button": "Let’s collaborate"
-    },
-  
-    "about": {
-      "title": "Who are we ?",
-      "info": " Uzbekistan Tech Service is an IT company based in Tashkent, Uzbekistan. We work closely with many brands and companies since 2023. Our clients are sacred and our passion is to provide them with utmost support. Discover how we can collaborate to improve the way your business performs.",
-      "button": "Let’s collaborate"
-    },
-  
-    "services": {
-      "title": "What we do ?",
-        "website": "Website development + branding",
-        "info": "When you sell your products online, you need a long - term strategy with a short - term focus on immediate sales. An alluring web design, consumer - focused content, and the right sales funnel all plays a key role in proper brand positioning."
-    },
-  
-    "portfolio": {
-      "title": "Our Porfolio"
-    },
-  
-    "contact": {
-      "title": "Contact Us",
-      "forColaboration": "For Collaboration",
-      "inputPlaceholder": "Write your email",
-      "button": "Send" ,
-      "agree" : "I agree with Terms of Privacy Policy" ,
-      "succes" : "Successfully sended"
-    },
-  
-    "footer": {
-      "reserve": "@2023 All rights reserved.",
-      "infoReserve": "We use cookies to enhance your browsing experience and analyze site usage.",
-      "subscribe": "Subscribe",
-      "phone": "Phone Number",
-      "locationTitle": "Location",
-      "location": "Ahmad Donish 4, Tashkent, Uzbekistan.",
-      "backToTop": "Back to Top"
-    }
-  } 
+  "navbar": {
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "pagesTitle": {
+    "header": "UTS - Uzbekistan Tech Service",
+    "services": "What we do ?",
+    "portfolio": "Our Porfolio",
+    "contact": "Contact Us"
+  },
+  "header": {
+    "title": "UTS",
+    "information": "We collaborate with companies to create world-class digital experience and help you do better business through adoption most advanced practices in web development, design, and digital marketing",
+    "button": "Let’s collaborate"
+  },
+  "about": {
+    "title": "Who are we ?",
+    "info": " Uzbekistan Tech Service is an IT company based in Tashkent, Uzbekistan. We work closely with many brands and companies since 2023. Our clients are sacred and our passion is to provide them with utmost support. Discover how we can collaborate to improve the way your business performs.",
+    "button": "Let’s collaborate"
+  },
+  "services": {
+    "title": "What we do ?",
+    "website": "Website development + branding",
+    "info": "When you sell your products online, you need a long - term strategy with a short - term focus on immediate sales. An alluring web design, consumer - focused content, and the right sales funnel all plays a key role in proper brand positioning."
+  },
+  "portfolio": {
+    "title": "Our Porfolio",
+    "halal": "Official website of the World Halal Council. This Council is engaged in issuing Halal certification and currently has more than 20 member countries.",
+    "chefs": "Official website of the Uzbekistan Chefs Association. This association trains and produces professional chefs in Uzbekistan.",
+    "uzbegim": "Famous and reputable Uzbek restaurant located in the center of Riga. For many years, it has been preparing Uzbek dishes in Latvia and has gained a high reputation."
+    
+  },
+  "contact": {
+    "title": "Contact Us",
+    "forColaboration": "For Collaboration",
+    "inputPlaceholder": "Write your email",
+    "button": "Send",
+    "agree": "I agree with Terms of Privacy Policy",
+    "succes": "Successfully sended"
+  },
+  "footer": {
+    "reserve": "@2023 All rights reserved.",
+    "infoReserve": "We use cookies to enhance your browsing experience and analyze site usage.",
+    "subscribe": "Subscribe",
+    "phone": "Phone Number",
+    "locationTitle": "Location",
+    "location": "Ahmad Donish 4, Tashkent, Uzbekistan.",
+    "backToTop": "Back to Top"
+  }
+}
