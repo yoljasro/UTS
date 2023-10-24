@@ -30,12 +30,12 @@ export const Header: FC<any> = () => {
       <Fade right cascade>
       <div className={styles.header__media}>
         <ul className={styles.header__services}>
-          <li>Web design</li>
-          <li>Logo Design</li>
-          <li>Digital Development</li>
-          <li>Software development</li>
+          <li>{t("header.design")}</li>
+          <li>{t("header.logo")}</li>
+          <li>{t("header.digital")}</li>
+          <li>{t("header.soft")}</li>
         </ul>
-        <Image className={styles.header__image} src={'/assets/img/our.png'} alt='our image' width={765} height={452} />
+        <Image className={styles.header__image} src={'/assets/img/team.jpg'} alt='our image' width={765} height={452} />
       </div>
       </Fade>
     </div>
