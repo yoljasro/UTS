@@ -25,8 +25,7 @@ export const Branding: FC<any> = () => {
           <h3 className={styles.branding__title}>{t("services.website")}</h3>
           <hr className={styles.branding__hr} />
           <p className={styles.branding__desc}>{t("services.info")}</p>
-          <p className={styles.branding__btn}>{t("header.button")}</p>
-          <hr className={styles.branding__line} />
+          <Btn/>
         </div>
       </Fade>
       <Fade right cascade>
