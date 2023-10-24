@@ -35,7 +35,7 @@ export const Header: FC<any> = () => {
           <li>{t("header.digital")}</li>
           <li>{t("header.soft")}</li>
         </ul>
-        <Image className={styles.header__image} src={'/assets/img/our.png'} alt='our image' width={765} height={452} />
+        <Image className={styles.header__image} src={'/assets/img/data.png'} alt='our image' width={765} height={452} />
       </div>
       </Fade>
     </div>
