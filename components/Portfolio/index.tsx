@@ -66,7 +66,7 @@ export const Portfolio = () => {
             style={{ marginRight: '1rem' }}
             onClick={() => window.open('https://uzbegims.lv', '_blank')}
           >
-            <img src={"/assets/img/uzbegimss.png"} alt='uzbe' width={250} height={200} />
+            <img src={"/assets/img/uz2.png"} alt='uzbe' width={250} height={200} />
             <p>
               <Link className={styles.portfolio__site} href={'https://uzbegims.lv'}>uzbegims.lv</Link>
             </p>
