@@ -14,8 +14,12 @@
   "header": {
     "title": "UTS",
     "information": "We collaborate with companies to create world-class digital experience and help you do better business through adoption most advanced practices in web development, design, and digital marketing",
-    "button": "Let’s collaborate" , 
-    "motto" : "The future of perfect IT"
+    "button": "Let’s collaborate",
+    "motto": "The future of perfect IT",
+    "design": "Web design",
+    "logo": "Logo",
+    "digital": "Digital development",
+    "soft": "Software development"
   },
   "about": {
     "title": "Who are we ?",
@@ -32,7 +36,6 @@
     "halal": "Official website of the World Halal Council. This Council is engaged in issuing Halal certification and currently has more than 20 member countries.",
     "chefs": "Official website of the Uzbekistan Chefs Association. This association trains and produces professional chefs in Uzbekistan.",
     "uzbegim": "Famous and reputable Uzbek restaurant located in the center of Riga. For many years, it has been preparing Uzbek dishes in Latvia and has gained a high reputation."
-
   },
   "contact": {
     "title": "Contact Us",
@@ -40,7 +43,8 @@
     "inputPlaceholder": "Write your email",
     "button": "Send",
     "agree": "I agree with Terms of Privacy Policy",
-    "succes": "Successfully sended"
+    "succes": "Successfully sended",
+    "message": "Write message"
   },
   "footer": {
     "reserve": "@2023 All rights reserved.",

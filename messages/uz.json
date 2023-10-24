@@ -15,8 +15,12 @@
   "header": {
     "title": "UTS - Uzbekistan Tech Service",
     "information": "Biz kompaniyalar bilan jahon darajasidagi raqamli texnologiyalarni yaratish va raqamli marketing bo'yicha eng yaxshi tajribalarni joriy etish orqali yanada samaraliroq biznes yuritishda yordam berish uchun hamkorlik qilamiz.",
-    "button": "Hamkorlik", 
-    "motto" : "Mukammal IT Kelajagi"
+    "button": "Hamkorlik",
+    "motto": "Mukammal IT Kelajagi",
+    "design": "Web dizayn",
+    "logo": "Logotip",
+    "digital": "Digital development",
+    "soft": "Software development"
   },
   "about": {
     "title": "Biz kimmiz?",
@@ -40,7 +44,8 @@
     "inputPlaceholder": "Elektron pochtangizni yozing",
     "button": "Yuborish",
     "agree": "Maxfiylik siyosati shartlariga roziman",
-    "succes": "Muvaffaqiyatli yuborildi"
+    "succes": "Muvaffaqiyatli yuborildi",
+    "message": "Xabar yozing"
   },
   "footer": {
     "reserve": "@2023 Barcha huquqlar himoyalangan.",

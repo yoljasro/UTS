@@ -31,12 +31,13 @@ export const Branding: FC<any> = () => {
       </Fade>
       <Fade right cascade>
         <div className={styles.branding__info}>
-          <MainPageTitle title={t("  ")} />
-          <h3 className={styles.branding__title}>{t("services.website")}</h3>
+          <MainPageTitle title={t("    ")} />
+          {/* <h3 className={styles.branding__title}>{t("services.website")}</h3>
           <hr className={styles.branding__hr} />
           <p className={styles.branding__desc}>{t("services.info")}</p>
           <p className={styles.branding__btn}>{t("header.button")}</p>
-          <hr className={styles.branding__line} />
+          <hr className={styles.branding__line} /> */}
+          <Image className={styles.branding__image} src={'/assets/img/branding.png'} alt='brandingimage' width={700} height={400}/>
         </div>
       </Fade>
         </div>

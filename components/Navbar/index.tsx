@@ -62,6 +62,7 @@ export const Navbar: FC = () => {
             >
               {t("navbar.about")}
             </Link>
+            <hr />  
           </li>
 
           <li className={styles.navbar__menuItem} onClick={closeMenu}>
@@ -75,6 +76,7 @@ export const Navbar: FC = () => {
             >
               {t("navbar.services")}
             </Link>
+            <hr />
           </li>
 
           <li className={styles.navbar__menuItem} onClick={closeMenu}>
@@ -88,6 +90,7 @@ export const Navbar: FC = () => {
             >
               {t("navbar.portfolio")}
             </Link>
+            <hr />
           </li>
 
           <li className={styles.navbar__menuItem} onClick={closeMenu}>
@@ -101,6 +104,7 @@ export const Navbar: FC = () => {
             >
               {t("navbar.contact")}
             </Link>
+            <hr />
           </li>
         </ul>
 

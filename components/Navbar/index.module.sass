@@ -16,10 +16,15 @@
 
     &__menuItem
         &:hover
-            text-decoration: underline
-            color: blue
             transition: 0.4s ease
-            transform: scale(1.1)
+            transform: scale(1.2)
+        &:hover hr
+            display: flex
+            transition: 2s linear
+            width: 100%
+
+        & hr
+            display: none
 
     &__language
         width: 100%

@@ -66,7 +66,7 @@ export const Contact: FC<any> = () => {
                 <Fade left cascade>
                     <div>
                         <p className={styles.contact__text}>{t("contact.forColaboration")}</p>
-                        <textarea value={text} onChange={(e) => setText(e.target.value)} className={styles.contact__textarea} placeholder={t("contact.inputPlaceholder")}></textarea>
+                        <textarea value={text} onChange={(e) => setText(e.target.value)} className={styles.contact__textarea} placeholder={t("contact.message")}></textarea>
                     </div>
                 </Fade>
                 <Fade right cascade>
