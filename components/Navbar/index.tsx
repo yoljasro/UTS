@@ -59,10 +59,11 @@ export const Navbar: FC = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              className={styles.navbar__link}
             >
               {t("navbar.about")}
             </Link>
-            <hr />  
+            <hr />
           </li>
 
           <li className={styles.navbar__menuItem} onClick={closeMenu}>
@@ -73,6 +74,7 @@ export const Navbar: FC = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              className={styles.navbar__link}
             >
               {t("navbar.services")}
             </Link>
@@ -87,6 +89,7 @@ export const Navbar: FC = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              className={styles.navbar__link}
             >
               {t("navbar.portfolio")}
             </Link>
@@ -100,6 +103,7 @@ export const Navbar: FC = () => {
               spy={true}
               smooth={true}
               offset={-70}
+              className={styles.navbar__link}
               duration={500}
             >
               {t("navbar.contact")}

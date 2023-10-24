@@ -20,7 +20,7 @@ export const ClientBased: FC<any> = () => {
       <Bounce left cascade>
         <div className={styles.client__info}>
       <MainPageTitle title={t("about.title")}/>
-      <p className={styles.client__desc}> <span> UTS</span> {t("about.info")}</p>
+      <p className={styles.client__desc}> <span> UTS UZBEKISTAN TECH SERVICE</span> {t("about.info")}</p>
       <Btn/>
       </div>
       </Bounce>
