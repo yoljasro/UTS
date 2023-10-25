@@ -29,7 +29,8 @@ export const Footer: FC<any> = () => {
             </div>
             <div className={styles.footer_content}>
                 <p className={styles.footer__title}>{t("footer.phone")}</p>
-                <p className={styles.footer__text}>+998 | 94 | 450 06 84</p>
+                <p className={styles.footer__text}>+998 |94| 450-06-84</p>
+                <p className={styles.footer__text}>uzbekistantechservice@gmail.com</p>
             </div>
             <div className={styles.footer_content}>
                 <p className={styles.footer__title}>{t("footer.locationTitle")}</p>
