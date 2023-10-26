@@ -6,56 +6,39 @@
     justify-content: space-between
     width: 100%
     padding: 55px 50px 5px 70px
-
+    @include container
+    align-items: center
+    &__logoCont
+        img
+            cursor: pointer
+            width: 124px
+            height: 68px
     &__menu
         display: flex
         gap: 44px
         @include font(24px , $colorWhite , light)
         cursor: pointer
-        margin-top: 20px
-
-    &__menuItem
-        &:hover
-            transform: rotateY(40deg)
-            transition: 2s ease
-
-        &:hover hr
-            display: flex
-            transition: 2s linear
-            width: 100%
-
-        & hr
+        @media  (max-width:768px)
             display: none
-
+        @media  (max-width:450px)
+            margin: auto
+            text-align: center
+            width: 100% !important
     &__link
+        letter-spacing: -1.44px
+        transition: .1s
+        &:after
+            content: ""
+            width: 0%
+            height: 1px
+            background: #fff
+            display: block
+            transition: .5s
         &:hover
-            transform: scale(4)
-            transition: 0.3s ease
-            font-size: 27px
-
-            // &:after
-            //     content: ''
-            //     position: absolute
-            //     top: 2px
-            //     left: 0
-            //     width: 100%
-            //     height: 100%
-            //     background-color: #262626
-            //     transform: scale(0)
-            //     opacity: 0
-            //     transition: .3s
-            //     z-index: -1
-
-            // &:hover
-            //     color: #fff
-            //     &:before
-            //         transform: scaleY(1)
-            //         opacity: 1
-
-            //     &:after
-            //         transform: scaleY(1)
-            //         opacity: 1
-
+            &:after
+                width: 100%
+        @media  (max-width:998px)
+            font-size: 30px
     &__language
         width: 100%
         max-width: 100px
@@ -67,7 +50,67 @@
         @include font(24px , $colorWhite , medium)
         background: black
         cursor: pointer
-
+        @media  (max-width:998px)
+            max-width: 80px
+        @media  (max-width:768px)
+            display: none
+        @media  (max-width:450px)
+            margin: auto
     &__select
         color: white
         text-decoration: underline
+
+    // Bars
+    .bars
+        width: 50px
+        height: auto
+        display: none
+        position: absolute
+        right: 20px
+        top: 40px
+        z-index: 6
+        @media  (max-width:768px)
+            display: block
+        .line
+            width: 100%
+            height: 2px
+            background: white
+            transition: 1s all !important
+            opacity: 1 !important
+            margin-top: 13px
+            transform: translate(0px, 0) rotate(0deg)
+    .activeBars
+        position: fixed
+        .line:nth-child(2)
+            opacity: 0 !important
+
+        .line:nth-child(1)
+            transform: translate(0px, 15px) rotate(45deg) !important
+
+        .line:nth-child(3)
+            transform: translate(0px, -15px) rotate(-45deg) !important
+
+    .activeNav
+        left: 0 !important
+    .mobileNav
+        width: 100%
+        height: 100vh
+        position: fixed
+        top: 0
+        left: -100%
+        z-index: 5
+        background: #000
+        display: none
+        padding: 30px 20px
+        transition: .3s
+        @media (max-width:768px)
+            display: block
+        .navbar__menu
+            display: block
+            margin-top: 150px
+            width: 300px
+            li
+                margin-top: 20px
+        .navbar__language
+            display: block
+            margin-top: 50px

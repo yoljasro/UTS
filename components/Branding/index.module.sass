@@ -4,10 +4,18 @@
 .branding
     @include container
     display: flex
-    // justify-content: 
-    gap: 400px
+    justify-content: space-between
+    align-items: center
+
+    @media (max-width:998px)
+        flex-direction: column
 
     &__info
+        width: 45%
+        @media (max-width:998px)
+            width: 100%
+            margin-bottom: 50px
+
         &:last-child
             // margin-top: 130px
 
@@ -15,8 +23,12 @@
         @include font(24px , #FFF ,medium)
         width: 100%
         max-width: 296px
-        padding-top: 190px
-
+        padding-top: 120px
+        @media (max-width:768px)
+            padding-top: 66px
+        @media (max-width:450px)
+            @include font(22px , #FFF ,medium)
+            padding-top: 55px
     &__hr
         position: relative
         top: 24px
@@ -26,9 +38,10 @@
         width: 100%
         max-width: 620px
         padding-top: 50px
+        @media (max-width:768px)
+            @include font(18px , #FFF , light)
 
     &__btn
-        @include font(18px , #FFF  , medium)
         padding-top: 56px
 
     &__line
@@ -38,4 +51,7 @@
 
     &__image
         border-radius: 10px !important
-        margin-top: 180px !important
+        width: 100%
+        height: auto
+        @media (max-width:998px)
+            display: none

@@ -34,7 +34,6 @@ export const Portfolio = () => {
         >
           <motion.div
             className={styles.portfolio__card}
-            whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{ marginRight: '1rem' }}
             onClick={() => window.open('https://worldhalal.uz', '_blank')}
@@ -47,7 +46,6 @@ export const Portfolio = () => {
           </motion.div>
           <motion.div
             className={styles.portfolio__card}
-            whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{ marginRight: '1rem' }}
             onClick={() => window.open('https://chefs.uz', '_blank')}
@@ -61,7 +59,6 @@ export const Portfolio = () => {
           </motion.div>
           <motion.div
             className={styles.portfolio__card}
-            whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{ marginRight: '1rem' }}
             onClick={() => window.open('https://uzbegims.lv', '_blank')}

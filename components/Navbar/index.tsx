@@ -3,8 +3,6 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import Zoom from 'react-reveal/Zoom';
-
-import { FiMenu } from "react-icons/fi";
 import { langs, localStorageKeys } from "../../constants";
 import { Link, animateScroll as scroll } from "react-scroll";
 import styles from "./index.module.sass";
@@ -38,6 +36,8 @@ export const Navbar: FC = () => {
     }
   }, [selectedLang]);
 
+
+
   return (
     <nav className={styles.navbar} id="navbar">
       <Zoom cascade>
@@ -46,8 +46,8 @@ export const Navbar: FC = () => {
             className={styles.navbar__logo}
             src={"/assets/img/logo2.svg"}
             alt="logo"
-            width={124}
-            height={69}
+            width={200}
+            height={200}
           />
         </div>
         <ul className={styles.navbar__menu}>
@@ -63,7 +63,6 @@ export const Navbar: FC = () => {
             >
               {t("navbar.about")}
             </Link>
-            <hr />
           </li>
 
           <li className={styles.navbar__menuItem} onClick={closeMenu}>
@@ -78,7 +77,6 @@ export const Navbar: FC = () => {
             >
               {t("navbar.services")}
             </Link>
-            <hr />
           </li>
 
           <li className={styles.navbar__menuItem} onClick={closeMenu}>
@@ -93,7 +91,6 @@ export const Navbar: FC = () => {
             >
               {t("navbar.portfolio")}
             </Link>
-            <hr />
           </li>
 
           <li className={styles.navbar__menuItem} onClick={closeMenu}>
@@ -108,7 +105,6 @@ export const Navbar: FC = () => {
             >
               {t("navbar.contact")}
             </Link>
-            <hr />
           </li>
         </ul>
 
@@ -123,7 +119,107 @@ export const Navbar: FC = () => {
             </option>
           ))}
         </select>
+        <div className={`${styles.bars} ${click && styles.activeBars}`} onClick={() => {
+          setClick(!click)
+        }}>
+          <div className={styles.line}></div>
+          <div className={styles.line}></div>
+          <div className={styles.line}></div>
+        </div>
       </Zoom>
-    </nav>
+      <div className={`${styles.mobileNav} ${click && styles.activeNav}`}>
+        <Zoom cascade>
+          <div className={styles.navbar__logoCont}>
+            <Image
+              className={styles.navbar__logo}
+              src={"/assets/img/logo2.svg"}
+              alt="logo"
+              width={200}
+              height={200}
+            />
+          </div>
+          <ul className={styles.navbar__menu}>
+            <li className={styles.navbar__menuItem} onClick={closeMenu}>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className={styles.navbar__link}
+                onClick={() => {
+                  setClick(!click)
+                }}
+              >
+                {t("navbar.about")}
+              </Link>
+            </li>
+
+            <li className={styles.navbar__menuItem} onClick={closeMenu}>
+              <Link
+                activeClass="active"
+                to="branding"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className={styles.navbar__link}
+                onClick={() => {
+                  setClick(!click)
+                }}
+              >
+                {t("navbar.services")}
+              </Link>
+            </li>
+
+            <li className={styles.navbar__menuItem} onClick={closeMenu}>
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className={styles.navbar__link}
+                onClick={() => {
+                  setClick(!click)
+                }}
+              >
+                {t("navbar.portfolio")}
+              </Link>
+            </li>
+
+            <li className={styles.navbar__menuItem} onClick={closeMenu}>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                className={styles.navbar__link}
+                onClick={() => {
+                  setClick(!click)
+                }}
+                duration={500}
+              >
+                {t("navbar.contact")}
+              </Link>
+            </li>
+          </ul>
+          <select
+            value={selectedLang}
+            onChange={handleChangeLang}
+            className={styles.navbar__language}
+          >
+            {langs.map((lang) => (
+              <option key={lang} value={lang}>
+                {lang}
+              </option>
+            ))}
+          </select>
+        </Zoom>
+      </div>
+    </nav >
   );
 };

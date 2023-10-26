@@ -5,22 +5,10 @@ import styles from './index.module.sass'
 // mui
 // FC
 import { FC } from 'react'
-import { Btn } from '../Btn'
-// next component
-import Image from 'next/image'
+// next component 
 import axios from 'axios'
-import Modal from 'react-modal';
-import { useRouter } from "next/router";
 import { useTranslations } from "next-intl";
 import Fade from 'react-reveal/Fade'
-
-
-// const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
-//     props,
-//     ref,
-// ) {
-//     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
-// });
 
 export const Contact: FC<any> = () => {
     const t = useTranslations();
@@ -46,12 +34,9 @@ export const Contact: FC<any> = () => {
                 text: text,
                 email: email
             });
-            // setOpen(true)
             alert("Sended your information")
-            // setResponseMessage(response.data); // Assuming the API returns a success message
-            // setModalIsOpen(true); // Open the mod
 
-            
+
         } catch (error) {
             console.error(error);
             alert("Sended your information")
@@ -64,7 +49,7 @@ export const Contact: FC<any> = () => {
 
             <div className={styles.contact__section}>
                 <Fade left cascade>
-                    <div>
+                    <div className={styles.contact__left}>
                         <p className={styles.contact__text}>{t("contact.forColaboration")}</p>
                         <textarea value={text} onChange={(e) => setText(e.target.value)} className={styles.contact__textarea} placeholder={t("contact.message")}></textarea>
                     </div>

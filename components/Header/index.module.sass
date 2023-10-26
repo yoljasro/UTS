@@ -5,31 +5,83 @@
     @include container
     display: flex
     justify-content: space-between
-    @media (max-width:768px)
-        flex-direction: column
+    margin-top: 100px
 
+    @media (max-width:1140px)
+        margin-top: 50px
+
+    @media (max-width:998px)
+        flex-direction: column
+    &__btn_mob
+        display: none
+        @media (max-width:998px)
+            display: block
+    &__btn_pc
+        @media (max-width:998px)
+            display: none
+    &__info
+        width: 53%
+
+        @media (max-width:1325px )
+            width: 48%
+
+        @media (max-width:998px)
+            width: 100%
     &__title
         @include font(40px , $colorWhite , medium)
 
+        @media (max-width:1325px )
+            @include font(32px , $colorWhite , medium)
+
+        @media (max-width:450px)
+            width: 80px
+            height: 50px
+            overflow: hidden
+            @include font(40px , $colorWhite , regular)
+            margin-bottom: 24px
     &__desc
         @include font(24px , $colorWhite , light)
         width: 100%
         max-width: 860px
         padding-top: 15px
 
+        @media (max-width:1325px )
+            @include font(18px , $colorWhite , medium)
+            padding-top: 0
+        @media (max-width:450px)
+            @include font(16px , $colorWhite , light)
+
     &__media
+        width: 45%
         display: flex
         flex-direction: column
 
+        @media (max-width:1325px )
+            width: 50%
+        @media (max-width:998px)
+            width: 100%
+            margin-top: 50px
+
     &__services
         display: flex
-        gap: 55px
+        justify-content: space-between
         @include font(18px , #FFF , light)
         margin-bottom: 20px
+        @media (max-width:1325px)
+            @include font(15px , #FFF , light)
+        @media(max-width:1170px)
+            display: none
 
     &__motto
         @include font(18px , #FFF , medium)
         padding: 10px 0px
-
+        @media (max-width:1325px )
+            @include font(15px , $colorWhite , medium)
+        @media (max-width:450px)
+            display: none
     &__image
         border-radius: 10px !important
+        width: 100%
+        height: auto
+        @media (max-width:450px)
+            border-radius: 0 !important

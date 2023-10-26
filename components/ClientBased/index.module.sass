@@ -5,18 +5,52 @@
     @include container
     display: flex
     justify-content: space-between
-    @media (max-width:768px)
+    align-items: center
+    margin-top: 70px
+
+    @media (max-width:998px)
         flex-direction: column
+
+    &__info
+        width: 55%
+        @media (max-width:998px)
+            width: 100%
 
     &__desc
         @include font(24px , #FFF , light)
         width: 100%
-        padding-top: 190px
-        max-width: 1002px
+        padding-top: 150px
+        max-width: 100%
 
         & span
             @include font(30px , #FFF , medium)
-
+        @media (max-width:1190px)
+            padding-top: 100px
+            @include font(19px , #FFF , medium)
+            & span
+                @include font(25px , #FFF , medium)
+        @media (max-width:768px)
+            padding-top: 50px
+        @media (max-width:450px)
+            @include font(16px , #FFF , light)
+            padding-top: 45px
+            & span
+                @include font(16px , #FFF , light)
+                width: 30px !important
+                height: 18px
+                overflow: hidden
+                display: inline-block
     &__img
         position: relative
         top: 100px
+    &__media
+        width: 40%
+        height: 300px
+        position: relative
+        @media (max-width:998px)
+            display: none
+        img
+            width: 100%
+            height: auto
+            position: absolute
+            top: 0

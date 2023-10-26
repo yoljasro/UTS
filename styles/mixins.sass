@@ -1,12 +1,15 @@
 @mixin container
     width: 100%
-    padding: 55px 50px 5px 70px 
-    margin-top: 250px
-
+    padding: 55px 50px 5px 70px
+    margin: auto
+    max-width: 1791px
+    overflow-x: hidden
+    @media (max-width:998px)
+        padding: 30px 13px
+        width: 95%
 @mixin row
     display: flex
     flex-wrap: wrap
-
 
 @mixin font($size, $color, $weight)
     font-size: $size
