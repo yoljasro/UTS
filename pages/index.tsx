@@ -7,9 +7,14 @@ import { Branding } from '../components/Branding';
 import { Portfolio } from '../components/Portfolio';
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
+import { useTranslations } from 'next-intl';
+
 
 
 const Home: NextPage = () => {
+  const t = useTranslations();
+
+
   return (
     <div>
       <Head>
@@ -20,8 +25,13 @@ const Home: NextPage = () => {
         />
         <meta
           name="google-site-verification"
-          content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4"
+          content="3oyXX3xez8fYAergAhV4wdCEhYXCV8a4DT1yJDp3Qjw"
         />
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:url" content="https://uzbekistantechservice.uz"></meta>
+        <meta property="og:description" content={t("header.information")}></meta>
+        <meta name="description" content={t("header.information")}></meta>
+
         <link rel="icon" href="/assets/img/logo2.svg" />
       </Head>
       <Navbar />
@@ -35,7 +45,6 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
@@ -44,10 +53,4 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
     },
   };
 };
-
-// export async function getStaticPaths() {
-//   return {
-//     paths: [], // Bu yerda bosh array bo'lishi kerak
-//     fallback: 'blocking',
-//   };
-// }
+export default Home
