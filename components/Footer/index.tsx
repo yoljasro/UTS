@@ -28,7 +28,7 @@ export const Footer: FC<any> = () => {
 
                 <div className={styles.footer_content}>
                     <p className={styles.footer__title}>{t("footer.phone")}</p>
-                    <a href="tel:+998944500684" target="_blank" rel="noreferrer" className={styles.footer__text}>+998 |94| 450-06-84</a>
+                    <a href="tel:+998944500684" target="_blank" rel="noreferrer" className={styles.footer__text}>+998 | 88 | 155-54-15</a>
                     <a href="mailto:uzbekistantechservice@gmail.com" target="_blank" rel="noreferrer" className={styles.footer__text}>uzbekistantechservice@gmail.com</a>
                 </div>
                 <div className={styles.footer_content}>
