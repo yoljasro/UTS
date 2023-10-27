@@ -33,12 +33,22 @@
         @media (max-width:1325px )
             @include font(32px , $colorWhite , medium)
 
+        @media (max-width:535px)
+            span
+                display: block
+                @include font(35px , $colorWhite , medium)
+            @include font(30px , $colorWhite , medium)
+
         @media (max-width:450px)
-            width: 80px
-            height: 50px
-            overflow: hidden
-            @include font(40px , $colorWhite , regular)
+            @include font(30px , $colorWhite , regular)
             margin-bottom: 24px
+        @media (max-width:405px)
+            @include font(25px , $colorWhite , regular)
+            margin-bottom: 24px
+        @media (max-width:341px)
+            @include font(23px , $colorWhite , regular)
+            margin-bottom: 15px
+
     &__desc
         @include font(24px , $colorWhite , light)
         width: 100%
@@ -69,6 +79,9 @@
         margin-bottom: 20px
         @media (max-width:1325px)
             @include font(15px , #FFF , light)
+        @media (max-width:1450px)
+            @include font(16px , #FFF , light)
+
         @media(max-width:1170px)
             display: none
 
@@ -78,7 +91,8 @@
         @media (max-width:1325px )
             @include font(15px , $colorWhite , medium)
         @media (max-width:450px)
-            display: none
+            @include font(14px , $colorWhite , regular)
+
     &__image
         border-radius: 10px !important
         width: 100%

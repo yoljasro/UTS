@@ -21,7 +21,10 @@ export const Header: FC<any> = () => {
     <div className={styles.header}>
       <Bounce left cascade className={styles.header__left}>
         <div className={styles.header__info}>
-          <h3 className={styles.header__title}>{t("header.title")}</h3>
+          <h3 className={styles.header__title}>
+            <span>UTS - </span>
+            {t("header.title")}
+          </h3>
           <p className={styles.header__motto}>{t("header.motto")}</p>
           <p className={styles.header__desc}>{t("header.information")}</p>
           <div className={styles.header__btn_pc}>

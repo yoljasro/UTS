@@ -2,7 +2,7 @@ import React, { useState, useEffect, FC, ChangeEventHandler } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import Zoom from 'react-reveal/Zoom';
+import Zoom from "react-reveal/Zoom";
 import { langs, localStorageKeys } from "../../constants";
 import { Link, animateScroll as scroll } from "react-scroll";
 import styles from "./index.module.sass";
@@ -35,8 +35,6 @@ export const Navbar: FC = () => {
       });
     }
   }, [selectedLang]);
-
-
 
   return (
     <nav className={styles.navbar} id="navbar">
@@ -119,9 +117,12 @@ export const Navbar: FC = () => {
             </option>
           ))}
         </select>
-        <div className={`${styles.bars} ${click && styles.activeBars}`} onClick={() => {
-          setClick(!click)
-        }}>
+        <div
+          className={`${styles.bars} ${click && styles.activeBars}`}
+          onClick={() => {
+            setClick(!click);
+          }}
+        >
           <div className={styles.line}></div>
           <div className={styles.line}></div>
           <div className={styles.line}></div>
@@ -149,7 +150,7 @@ export const Navbar: FC = () => {
                 duration={500}
                 className={styles.navbar__link}
                 onClick={() => {
-                  setClick(!click)
+                  setClick(!click);
                 }}
               >
                 {t("navbar.about")}
@@ -166,7 +167,7 @@ export const Navbar: FC = () => {
                 duration={500}
                 className={styles.navbar__link}
                 onClick={() => {
-                  setClick(!click)
+                  setClick(!click);
                 }}
               >
                 {t("navbar.services")}
@@ -183,7 +184,7 @@ export const Navbar: FC = () => {
                 duration={500}
                 className={styles.navbar__link}
                 onClick={() => {
-                  setClick(!click)
+                  setClick(!click);
                 }}
               >
                 {t("navbar.portfolio")}
@@ -199,7 +200,7 @@ export const Navbar: FC = () => {
                 offset={-70}
                 className={styles.navbar__link}
                 onClick={() => {
-                  setClick(!click)
+                  setClick(!click);
                 }}
                 duration={500}
               >
@@ -220,6 +221,6 @@ export const Navbar: FC = () => {
           </select>
         </Zoom>
       </div>
-    </nav >
+    </nav>
   );
 };
