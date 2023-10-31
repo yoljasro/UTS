@@ -11,10 +11,14 @@ import { NextIntlProvider } from "next-intl";
 import "../styles/globals.sass";
 // next progresbar
 import NextNProgress from "nextjs-progressbar";
+// yandex metrica
+import { YandexMetricaProvider } from 'next-yandex-metrica';
 
 type PagePropsType = {
   messages: typeof import("../messages/uz.json");
 };
+
+
 
 const usePreviousRoute = () => {
   const { asPath } = useRouter();
@@ -28,15 +32,21 @@ const usePreviousRoute = () => {
   return ref.current;
 };
 
+
 function MyApp({ Component, pageProps }: AppProps<PagePropsType>) {
   const previousRoute = usePreviousRoute();
 
   return (
     <>
-      <NextIntlProvider messages={pageProps.messages}>
-        <NextNProgress />
-        <Component {...pageProps} {...{ previousRoute: previousRoute }} />
-      </NextIntlProvider>
+      <YandexMetricaProvider
+        tagID={95422993}
+        initParameters={{ clickmap: true, trackLinks: true, accurateTrackBounce: true }}
+      >
+        <NextIntlProvider messages={pageProps.messages}>
+          <NextNProgress />
+          <Component {...pageProps} {...{ previousRoute: previousRoute }} />
+        </NextIntlProvider>
+      </YandexMetricaProvider>
     </>
   );
 }
@@ -45,7 +55,7 @@ export default MyApp;
 
 export async function getStaticPaths() {
   return {
-    paths: [], // Bu yerda bosh array bo'lishi kerak
+    paths: [], 
     fallback: 'blocking',
   };
 }
