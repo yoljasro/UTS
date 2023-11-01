@@ -28,7 +28,6 @@ const Home: NextPage = () => {
           content="3oyXX3xez8fYAergAhV4wdCEhYXCV8a4DT1yJDp3Qjw"
         />
         <meta name="yandex-verification" content="5ae15a0c9ccd5ef5" />
-        <meta name='robots' content='noindex' />
         <meta property="og:type" content="website"></meta>
         <meta property="og:url" content="https://uzbekistantechservice.uz"></meta>
         <meta property="og:description" content={t("header.information")}></meta>
