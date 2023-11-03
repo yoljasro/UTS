@@ -42,7 +42,7 @@ export const Navbar: FC = () => {
         <div className={styles.navbar__logoCont}>
           <Image
             className={styles.navbar__logo}
-            src={"/assets/img/logo2.svg"}
+            src={"/assets/img/logo.png"}
             alt="logo"
             width={200}
             height={200}

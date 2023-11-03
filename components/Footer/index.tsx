@@ -1,7 +1,7 @@
 import { FC } from "react";
 //sass
 import styles from "./index.module.sass";
-// import Fade from 'react-reveal/Fade';
+
 import { Link, animateScroll as scroll } from "react-scroll";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -20,15 +20,21 @@ export const Footer: FC<any> = () => {
                 <div className={styles.footer_content}>
                     <p className={styles.footer__title}>{t("footer.subscribe")}</p>
                     <div className={styles.footer__social}>
-                        <Image src={'/assets/img/facebook.png'} alt="instagram" width={40} height={40} />
-                        <Image src={'/assets/img/instagram.png'} alt="faceebook" width={40} height={40} />
-                        <Image src={'/assets/img/telegram.png'} alt="telegram" width={40} height={40} />
+                        <a href="#">
+                            <Image src={'/assets/img/facebook.png'} alt="instagram" width={40} height={40} />
+                        </a>
+                        <a href="#">
+                            <Image src={'/assets/img/instagram.png'} alt="facebook" width={40} height={40} />
+                        </a>
+                        <a href="#">
+                            <Image src={'/assets/img/telegram.png'} alt="telegram" width={40} height={40} />
+                        </a>
                     </div>
                 </div>
 
                 <div className={styles.footer_content}>
                     <p className={styles.footer__title}>{t("footer.phone")}</p>
-                    <a href="tel:+998944500684" target="_blank" rel="noreferrer" className={styles.footer__text}>+998 | 88 | 155-54-15</a>
+                    <a href="tel:+998944500684" target="_blank" rel="noreferrer" className={styles.footer__text}>+998 |94| 450-06-84</a>
                     <a href="mailto:uzbekistantechservice@gmail.com" target="_blank" rel="noreferrer" className={styles.footer__text}>uzbekistantechservice@gmail.com</a>
                 </div>
                 <div className={styles.footer_content}>
@@ -42,7 +48,7 @@ export const Footer: FC<any> = () => {
                         smooth={true}
                         offset={-70}
                         duration={500}>
-                        <Image className={styles.footer__back} src={'/assets/img/back.png'} alt="back" width={138} height={20} />
+                        <Image className={styles.footer__back} src={'/assets/img/back.png'} alt="" width={138} height={20} />
                     </Link>
                 </div>
             </Zoom>

@@ -11,13 +11,12 @@ import { NextIntlProvider } from "next-intl";
 import "../styles/globals.sass";
 // next progresbar
 import NextNProgress from "nextjs-progressbar";
-// yandex metrica
-import { YandexMetricaProvider } from 'next-yandex-metrica';
 
 type PagePropsType = {
   messages: typeof import("../messages/uz.json");
 };
 
+import { YandexMetricaProvider } from 'next-yandex-metrica';
 
 
 const usePreviousRoute = () => {
@@ -55,7 +54,7 @@ export default MyApp;
 
 export async function getStaticPaths() {
   return {
-    paths: [], 
+    paths: [], // Bu yerda bosh array bo'lishi kerak
     fallback: 'blocking',
   };
 }
